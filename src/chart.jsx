@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useRef } from 'react';
 import * as Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
@@ -11,13 +12,13 @@ const options = {
     height: 400
   },
   title: {
-    text: 'Word Frequency Example',
+    text: '',
     style: {
       color: '#d8d2d2'
     }
   },
   xAxis: {
-    categories: ['I', 'a', 'to', 'the', 'of', 'can', 'and', 'us', 'on', 'at', 'you', 'your', 'do', 'our', 'in', 'If', 'We', 'get', 'from', 'have'],
+    categories: ['I', 'A', 'To', 'The', 'Of', 'Can', 'And', 'Us', 'On', 'At', 'You', 'Your', 'Do', 'Our', 'In', 'If', 'We', 'Get', 'From', 'Have'],
     labels: {
       style: {
         color: '#d8d2d2'

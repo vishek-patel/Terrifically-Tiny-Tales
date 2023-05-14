@@ -12,7 +12,7 @@ h1 {
 }
 
 .content {
-  width: 924px;
+  width: 965px;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -40,7 +40,7 @@ h1 {
   background-color: #2196f3;
   margin-left: 10px;
   position: absolute;
-  bottom: 0;
+  bottom: 16px;
   right: 10px;
 }
 
@@ -54,12 +54,15 @@ h1 {
 .word-list {
   list-style: none;
   padding: 0;
+  display: flex;
+  gap: 10px;
 }
 
 .word-list li {
   margin-bottom: 5px;
   padding: 5px;
   color: #d8d2d2;
+
 }
 
 .chart {

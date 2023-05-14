@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
 import "./App.css";
 import ColumnChart from "./chart";
@@ -51,7 +52,11 @@ const App = () => {
     <div className="container">
       <h1>Terrifically Tiny Tales</h1>
       <div className="content">
-        {!words.length && (
+        {words.length ? (
+    <button className="btn" onClick={() => window.location.reload()}>
+      Back
+    </button>
+  ) :!words.length && (
           <button className="btn" onClick={fetchWords}>
             Submit
           </button>
@@ -62,7 +67,7 @@ const App = () => {
               <h2>Top 20 Words</h2>
               <ul className="word-list">
                 {words.map((word, index) => (
-                  <li key={index}>{word}</li>
+                  <li key={index}>{word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()}</li>
                 ))}
               </ul>
             </div>
@@ -77,7 +82,7 @@ const App = () => {
         {showHistogram && (
           <div className="results">
             <div className="chart-div">
-              <h2>Histogram</h2>
+              <h2>Histogram of Word Frequencies</h2>
               <ColumnChart />
             </div>
             <button className="btn" onClick={() => setShowHistogram(false)}>
