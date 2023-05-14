@@ -94,6 +94,7 @@ const App = () => {
           </div>
         )}
       </div>
+      <div className="author">Made by - Faishal Saif</div>
     </div>
   );
 };

@@ -92,3 +92,15 @@ h1 {
 .highcharts-credits{
   display: none;
 }
+.author{
+  color: #d8d2d2;
+  position: absolute;
+  font-size: 30px;
+  bottom: 31px;
+  right: 42px;
+  background: #323235;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+
+}
